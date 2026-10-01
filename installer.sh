@@ -146,8 +146,8 @@ section "1/7" "Installing System Dependencies"
 (apt update -y > /dev/null 2>&1) &
 spinner $! "Updating apt packages"
 
-(apt install -y git python3 python3-pip curl nano wget lxc lxc-templates uidmap > /dev/null 2>&1) &
-spinner $! "Installing git, python3, pip, lxc"
+(apt install -y git python3 python3-pip curl nano wget uidmap > /dev/null 2>&1) &
+spinner $! "Installing git, python3, pip "
 
 echo -e "${GREEN}  ✔ System ready${NC}"
 watermark
